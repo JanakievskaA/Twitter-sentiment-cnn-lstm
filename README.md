@@ -29,10 +29,9 @@ The model is built as follows:
 The model is trained with EarlyStopping to prevent overfitting and ReduceLROnPlateau to automatically lower the learning rate when the validation loss stops improving.
 
 ## Model Performance
+The model achieves 79% accuracy on the test set. 
 
-The model achieves 80% accuracy on the test set. 
-
-Across all four sentiment classes the model performs consistently, with Negative sentiment being the strongest at 0.85 F1-score, followed by Positive at 0.81, Neutral at 0.76, and Irrelevant at 0.75 which is expected as it is the hardest class to distinguish from the others.
+Across all four sentiment classes the model performs consistently, with Negative sentiment being the strongest at 0.83 F1-score, followed by Positive at 0.80, and Irrelevant and Neutral both at 0.75 which is expected as they are the hardest classes to distinguish from the others.
 
 ## Setup
 Download the GloVe embeddings manually and place `glove.6B.100d.txt` in the project.
