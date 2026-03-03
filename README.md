@@ -17,6 +17,8 @@ The cleaned tweets are tokenized using the top 10000 most frequent words in the 
 ### GloVe Embeddings
 Instead of learning word representations from scratch, the model uses pretrained GloVe embeddings (100-dimensional) trained on billions of words. This gives the model a head start in understanding word meaning and relationships.
 
+Download the GloVe embeddings manually and place `glove.6B.100d.txt` in the project.
+
 ### Model Architecture
 The model is built as follows:
 - **Embedding layer** initialized with GloVe weights
@@ -33,10 +35,8 @@ The model achieves 79% accuracy on the test set.
 
 Across all four sentiment classes the model performs consistently, with Negative sentiment being the strongest at 0.83 F1-score, followed by Positive at 0.80, and Irrelevant and Neutral both at 0.75 which is expected as they are the hardest classes to distinguish from the others.
 
-## Setup
-Download the GloVe embeddings manually and place `glove.6B.100d.txt` in the project.
-
 ## Demo
 A simple Streamlit interface is included for predicting sentiment 
 on new tweets. 
+
 To run the app: streamlit run app.py
