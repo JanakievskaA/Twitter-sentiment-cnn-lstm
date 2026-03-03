@@ -38,6 +38,5 @@ Download the GloVe embeddings manually and place `glove.6B.100d.txt` in the proj
 
 ## Demo
 A simple Streamlit interface is included for predicting sentiment 
-on new tweets. To run the app:
-
-streamlit run app.py
+on new tweets. 
+To run the app: streamlit run app.py
