@@ -33,3 +33,9 @@ The model is trained with EarlyStopping to prevent overfitting and ReduceLROnPla
 The model achieves 80% accuracy on the test set. 
 
 Across all four sentiment classes the model performs consistently, with Negative sentiment being the strongest at 0.85 F1-score, followed by Positive at 0.81, Neutral at 0.76, and Irrelevant at 0.75 which is expected as it is the hardest class to distinguish from the others.
+
+## Demo
+A simple Streamlit interface is included for predicting sentiment 
+on new tweets. To run the app:
+
+streamlit run app.py
